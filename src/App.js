@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import { Login } from "./Components/Login"
+export const App = () => {
+
+
+
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <h1>Stax Food Admin Login</h1>
+      <div className="container">
+        <h2 className="titel-container">Please fill in your unique admin login details below</h2>
+        <Login />
+      </div>
+    </>
+  )
 }
-
-export default App;
